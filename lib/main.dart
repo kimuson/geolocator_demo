@@ -30,14 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _location = "no data";
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  String _location = "";
 
   Future<void> getLocation() async {
     Position position = await Geolocator.getCurrentPosition(
